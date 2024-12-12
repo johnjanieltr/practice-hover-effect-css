@@ -1,0 +1,27 @@
+* { margin: 0; padding: 0; }
+
+body {
+  min-height: 100dvh;
+  text-align: center;
+}
+
+.container {
+  margin: 5rem auto 0;
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.item {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10px;
+  background-color: #9c23bd;
+  cursor: pointer;
+  transition: filter 0.5s, opacity 0.5s;
+}
+
+.container:hover >:not(:hover) {
+  filter: blur(5px);
+  opacity: 0.5;
+}
